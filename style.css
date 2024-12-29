@@ -1,0 +1,453 @@
+.menubarDark{
+    background-color: black
+}
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+body a{
+    text-decoration: none;
+
+}
+
+.hamburger{
+    position:fixed;
+    top: 10px;
+    left: 10px;
+    
+}
+.ham{
+    width: 35px;
+    cursor: pointer;
+}
+.cross{
+    width: 20px;
+    position:absolute;
+    left:12vw;
+    top: 15px;
+    cursor: pointer;
+}
+.sidebargo{
+    transform: translate(-443px,0px);
+    position: absolute;
+    
+    transition: right 0.3sec ease-in;
+}
+
+.hamburger img:hover{
+    background-color:rgb(25, 25, 26) ;
+}
+/*Menu-bar-style */
+.menubar ul{
+    
+    display: flex;
+    flex-direction: column;
+    position:relative;
+    top:0px;
+    width: 17vw;
+    font-size: 2vw;
+    list-style: none;
+    justify-content: left;
+}
+.menubar ul img{
+    width:2vw;
+    color: black;
+    cursor: pointer;
+}
+.menubar ul img:hover{
+   
+    background-color:rgb(135, 139, 143) ;
+}
+.menubar ul li {
+    transition: margin-left 0.5sec ease;
+    padding-top: 40px;
+
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.switch label{
+    position:absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    border-radius: 30px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.4s;
+}
+.switch label::before{
+    position: absolute;
+    content: "";
+    height: 24px;
+    width: 24px;
+    background-color: white;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    transition: 0.4s;
+}
+.switch input:checked+label{
+    background-color: black;
+}
+.switch input:checked + label::before{
+    transform: translateX(30px);
+}
+.menubar li a{
+    padding: 20px;
+    font-size: 2.9vw;
+    cursor: pointer;
+    color: white;
+}
+.menubar li a:hover {
+    font-size: 3.2vw;
+    color: rgb(135, 139, 143);
+}
+.menubar{
+    transition: margin-right 0.5s ease;
+    background-color: rgb(181, 183, 185);
+    width: 20%;
+    height:214vh;
+    transition: left 0.3sec ease;
+    position: fixed;
+    border-top:2px rgb(187, 181, 181) solid ;
+    top: 0;
+    left:0px;
+    
+}
+
+.button{
+    width: 8vw;
+    cursor: pointer;
+    height: 6vh;
+    background-color: orangered;
+    margin: 2%;
+    border: 0px;
+    color: white;
+    font-family:sans-serif;
+    font-size:108%;
+    font-weight: bolder;
+    border-radius: 43%;
+}
+.pro:hover{
+    width: 8.5vw;
+    height: 6.5vh;
+    font-size: 111%;
+}
+.con:hover{
+    width: 8.5vw;
+    height: 6.5vh;
+    font-size: 111%;
+}
+.content p{
+    font-size:2vw; ;
+}
+.btn{
+    position:relative;
+    left: 10%;
+    list-style: none;
+    text-align: center;
+    font-size: 108%;
+    height: 10vh;
+    background-color: orangered;
+    width: 7vw;
+    border-radius: 40%;
+   
+}
+.btn a{
+    color: white;
+    
+}
+.btn:hover{
+    font-size: 118%;
+    height: 12vh;
+    width: 8vw;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    transition: margin-left 0.5s ease;
+    margin-bottom: 1380px;
+    font-family: "Merriweather", serif;
+    color: white;
+}
+.container{
+    
+    display: flex;
+    left: 5%;
+    position: relative;
+    top: 9vh;
+    width: 80%;
+    height: 5vh;
+}
+.head{
+    width: 70vw;
+    font-size: 5vw;
+}
+
+.infobox{
+    width: 80%;
+    height: 70%;
+    position:relative;
+    top: 12%;   
+}
+.infobox li{
+    list-style: none;
+    padding-top: 5%;
+    font-size: 1vw;
+    font-family: "Merriweather", serif;
+    text-align: left;
+}
+.img{
+    
+    
+    position: absolute;
+    left: 45vw;
+    top: 5vh;
+}
+.name{
+    color: chocolate;
+}
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3fr;
+    gap: 20px;
+}
+.projectb{
+    
+    border-radius: 8%;
+    text-align: center;
+    color:lightgray;
+    background-color: white;
+    width: 26vw;
+    height: 80vh;
+    gap: 10px;
+}
+.projectb img{
+    width: 24vw;
+}
+.inp{
+    width: 18vw;
+    position: relative;
+    left: 20%;
+    margin-bottom: 30px;
+    transition: 0.3s ease-out;
+}
+
+.bt {
+    transition: 0.2s ease-in;
+    background-color: orangered;
+    width: 10vw;
+    border-radius: 38%;
+    height: 8vh;
+    font-weight: bolder;
+    font-family: "Merriweather", serif;
+    color: white;
+    border: 0px;
+    font-size: 2vw;
+    cursor: pointer;
+
+}
+.projectb a {
+    border-radius: 10px;
+    background-color: orangered;
+    transition: 0.2s ease-in-out;
+    font-weight: bolder;
+    font-family: "Merriweather", serif;
+    color: white;
+    border: 0px;
+    font-size: 2vw;
+    cursor: pointer;
+}
+.projectb a :hover{
+    font-size: 2.1vw;
+    transition: 0.2s ease-out;
+}
+.bt:hover{
+    height: 9.5vh;
+    width: 12vw;
+    font-size: 2.5vw;
+    transition: 0.3s ease-out;
+}
+
+/* Media Query */
+@media(max-width:680px){
+    .projectb{
+        
+        border-radius: 11%;
+        text-align: center;
+        color:lightgray;
+        background-color: white;
+        width: 28vw;
+        height:60vh;
+        gap: 10px;
+    }
+    .projectb img{
+        width: 24vw;
+    }
+    .projectb p{
+        font-size: large;
+    }
+    .container{
+        
+        left: 3%;
+        position: relative;
+        top: 9vh;
+        width: 90%;
+        height: 10vh;
+    }
+    .container p{
+        font-size: large;
+    }
+    .btn{
+        position:relative;        
+        font-size: 100%;
+        height: fit-content;
+        width: 24vw;
+           
+    }
+    .btn:hover{
+        width: 26vw;
+        font-size: 110%;
+    }
+}
+
+@media (max-width:456px){
+    .menubar ul{
+        font-size: 15px;
+        width: 27vw;
+        justify-content:center ;
+        align-items: left;
+    }
+    .menubar ul li{
+        padding-top: 30px;
+        position: relative;
+        right: 13vw;
+        
+    }
+    .img{
+        display: none;
+   }
+   .infobox{
+    right: 8%;
+   }
+   .container{
+        right: 20%;
+   }
+   .ham{
+    width: 20px;
+   }
+   .cross{
+    width: 20px;
+   }
+   .content h1{
+    position: relative;
+    
+   }
+   .bt{
+    width: 15vw;
+    height: 6vh;
+    box-shadow: black 10px;
+   }
+   .bt:hover{
+    height: 7vh;
+    width: 17vw;
+    font-size: 2.5vw;
+    transition: 0.3s ease-out;
+   }
+    .projectb{
+        
+        border-radius: 11%;
+        text-align: center;
+        color:lightgray;
+        background-color: white;
+        width: 24vw;
+        height:50vh;
+        gap: 10px;
+    }
+    .projectb img{
+        width: 24vw;
+    }
+    .button{
+        width: 16vw;
+        height: 5vh;        
+        font-size:178%;
+        
+        
+    }
+    .pro:hover{
+        width: 18vw;
+        height: 6.5vh;
+        font-size: 191%;
+    }
+    .con:hover{
+        width: 18vw;
+        height: 6.5vh;
+        font-size: 191%;
+    }
+    .projectb p{
+        font-size: large;
+    }
+}
+@media (max-width:800px){
+    .projectb{
+        width: 25vw;
+        height: 40vh;
+    }
+    .projectb p{
+        font-size: larger;
+    }
+}
+@media (max-width:1300px){
+    .projectb{
+        width:28vw ;
+        height: 50vh;
+    }
+}
+@media (max-width:450px){
+    .projectb{
+        width: 25vw;
+        height: 70vh;
+    }
+}
+@media(max-height:400px){
+    .projectb{
+        width: 25vw;
+        height: 90vh;
+    }
+}
+@media (max-width:326px){
+    .projectb{
+        
+        border-radius: 11%;
+        text-align: center;
+        color:lightgray;
+        background-color: white;
+        width: 24vw;
+        height:60vh;
+        gap: 10px;
+    }
+    .projectb p{
+        font-size: medium;
+    }
+    .head{
+        font-size: 7vw;
+        width: 99vw;
+        position: relative;
+        right: 10px;
+    }
+}

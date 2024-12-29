@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>My Intro</title>
+</head>
+
+<body>
+    <div class="menubar sidebargo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./intro.html">MyIntro</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><a href="./project.html">Projects</a></li>
+            </ul>
+             <!-- <div class="switch">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle"></label>
+            </div> -need to development-->
+        </nav>
+    </div>
+    <div class="hamburger ">
+        <img class="ham" src="../Images/ham.png" alt="">
+        <img class="cross" src="../Images/cross.png" alt="">
+    </div>
+    <div class="content container">
+        <p> About Me </p>
+
+        <p>Hi, I'm Umesh, a passionate and aspiring Front-End Web Developer with a love for crafting clean, responsive,
+            and visually appealing websites.
+
+            I started my journey in web development to combine my creativity and problem-solving skills. With a strong
+            foundation in HTML, CSS, and JavaScript, I enjoy bringing ideas to life on the web.
+
+            When I'm not coding, you can find me exploring new technologies, improving my skills, or diving into my
+            hobbies.</p>
+
+        <p>My Mission</p>
+        <p>To create websites that not only look great but also provide an intuitive and enjoyable user experience.</p>
+
+        <p>What I Value</p>
+
+        <p>Continuous Learning: I'm always
+
+            eager to learn and improve my craft.
+
+            <p>Attention to Detail: I believe in delivering polished and professional work.</p>
+
+           <p>Problem-Solving: I thrive on solving challenges with innovative solutions.</p>
+        <p>Fun Fact About Me</p>
+
+        <p>I'm an introvert who finds joy in quiet moments but love collaborating on exciting projects that make an
+            impact.</p>
+
+        <p>Let's Connect!</p>
+
+        <p>Feel free to explore my work or get in touch if you'd like to collaborate on something amazing!</p>
+    </div>
+    <script src="../index.js">
+        document.addEventListener("DOMContentLoaded", () => {
+            document.querySelector('#toggle').addEventListener("change", () => {
+                if (document.querySelector('#toggle').checked) {
+                    document.querySelector("body").classList.add('menubarDark');
+                    console.log("working");
+                } else {
+                    document.querySelector("body").classList.remove('menubarDark');
+                }
+            })
+        })
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Contact Me</title>
+    <style>
+       form{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        width: 25vw;
+        transition: 0.3s ease-out;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 40%;
+       }
+       form input{
+        width: 300px;
+       }
+       form textarea{
+        width: 300px;
+       }
+       form h1{
+        position: relative;
+        left: 12%;
+        font-size: 5vw;
+       }
+       .input button{
+        position: relative;
+        top: 5%;
+        left: 50%;
+       }
+       @media (max-width:1180px)and (min-width:680px){
+        form h1{
+            left: 39%;
+            font-size:7vw ;
+        }
+       }
+       @media (max-width:680px){
+        form{
+            left:26% ;
+        }
+        form h1{
+            left: 99%;
+            font-size:8vw ;
+        }
+        form input{
+        width: 200px;
+       }
+       form textarea{
+        width: 200px;
+       }
+       .input button{
+       
+        
+        left: 30%;
+       }
+       }
+
+    </style>
+</head>
+
+<body>
+    <div class="menubar sidebargo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./intro.html">MyIntro</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><a href="./project.html">Projects</a></li>
+            </ul>
+             <!-- <div class="switch">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle"></label>
+            </div> -need to development-->
+        </nav>
+    </div>
+    <div class="hamburger ">
+        <img class="ham" src="../Images/ham.png" alt="">
+        <img class="cross" src="../Images/cross.png" alt="">
+    </div>
+    <div class="content container ">
+        <div class="input">
+            <form> 
+                <h1 style=" width: 400px;">Contact Me</h1>
+              <input  placeholder="Your Name" type="text" required>
+              <input placeholder="Your Email" type="text" required>
+              <textarea  placeholder="Your Message" required>  </textarea>
+            </form>
+            <button type="submit" class="bt">Send</button>
+        </div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+
+</html>

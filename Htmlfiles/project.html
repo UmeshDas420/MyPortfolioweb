@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        h1 {
+            position: relative;
+            left: 10%;
+            bottom: 10%;
+            font-size: 3vw;
+        }
+
+        
+    </style>
+    <title>Projects</title>
+</head>
+
+<body>
+    <div class="menubar sidebargo">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./intro.html">MyIntro</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="./Contact.html">Contact</a></li>
+                <li><a href="./project.html">Projects</a></li>
+            </ul>
+            <!-- <div class="switch">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle"></label>
+            </div> -need to development-->
+        </nav>
+    </div>
+    <div class="hamburger ">
+        <img class="ham" src="../Images/ham.png" alt="">
+        <img class="cross" src="../Images/cross.png" alt="">
+    </div>
+    <div class="content container">
+        <h1 style="font-weight: bold;">These are my top projects :</h1>
+        <div class="project">
+            <div class="projectb 1">
+                <p class="heading">Clock</p>
+                <p>It's a Analog clock. Where you can see time (lol😁). </p>
+                <img src="/Images/clock.png" alt="My Clock project Image">
+                <a  href="https://umeshdas420.github.io/clock/"><span class="click">Click Here To See</span></a>
+            </div>
+            <div class="projectb 2">
+                <p class="heading">Spotify_clone</p>
+                <p>I tried to copy spotify's web but there is no backend so you can only play the songs that i added.
+                </p>
+                <img src="/Images/spotify.png" alt="My Spotify_clone project Image">
+                <a  href="https://umeshdas420.github.io/spotify_clone3/"><span class="click">Click Here To See</span></a>
+            </div>
+            <div class="projectb 3">
+                <p class="heading">Tictactoe</p>
+                <p>It's a two player game the Ticktactoe. You can see who's turn and also who won.</p>
+                <img src="/Images/Ticktactoe.png" alt="My Tictactoe project Image">
+                <a  href="https://umeshdas420.github.io/tictactoe/"><span class="click">Click Here To See</span></a>
+            </div>
+        </div>
+        <script>
+                const p = document.querySelectorAll('.click')[0];
+                const p1 = document.querySelectorAll('.click')[1];
+                const p2 = document.querySelectorAll('.click')[2];
+                p.style.borderRadius="10px";
+                p1.style.borderRadius="10px"
+                p2.style.borderRadius="10px"
+                setInterval(() => {
+                    setTimeout(() => {
+                        p.style.backgroundColor = "orangered";
+                        p1.style.backgroundColor  = "orangered";
+                        p2.style.backgroundColor  = "orangered";
+                    }, 500);
+                    p.style.backgroundColor  = "rgb(199, 132, 108)";
+                    p1.style.backgroundColor  = "rgb(199, 132, 108)";
+                    p2.style.backgroundColor  = "rgb(199, 132, 108)";
+
+                }, 1000)
+            </script>
+    </div>
+
+    <script src="../index.js"></script>
+</body>
+
+</html>
